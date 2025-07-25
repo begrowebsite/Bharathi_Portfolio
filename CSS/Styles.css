@@ -2,6 +2,20 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+ .glow-bg {
+    background-color: #FFD700; /* Golden background */
+    color: #000 !important; /* Dark text for contrast */
+    padding: 6px 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(255, 215, 0, 0.8);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+  }
+
+  .glow-bg:hover {
+    box-shadow: 0 0 18px rgba(255, 215, 0, 1), 0 0 30px rgba(255, 215, 0, 0.9);
+    transform: scale(1.05);
+  }
 
 .banner {
     background-image: url(../HTML/Bharathi/ai-generated-8368760_1920.jpg);
@@ -23,7 +37,7 @@ body {
     box-shadow: 0 0 30px #00f7ff, 0 0 60px #00f7ff, 0 0 90px #00f7ff;
 }
 
-video {
+iframe {
     width: 100%;
     border-radius: 8px;
     display: block;
@@ -101,4 +115,92 @@ video {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+
+  .image-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Makes square boxes */
+    background-color: rgba(255, 215, 0, 0.15); /* Golden background highlight */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  }
+
+  .grid-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crop & fit all image sizes */
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+  }
+
+  .grid-img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+
+  .glowing-image-s {
+    border: 4px solid #FFD700; /* Golden border */
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7); /* Outer glow around border */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .glowing-image-s:hover {
+    box-shadow: 0 0 25px rgb(175, 175, 173); /* Brighter glow on hover */
+    transform: scale(1.02); /* Optional slight zoom */
+  }
+
+    .video-glow-wrapper-s {
+    padding: 10px;
+    border-radius: 16px;
+    background-color: rgba(255, 215, 0, 0.12); /* Soft golden bg */
+    box-shadow: 0 0 12px rgba(255, 215, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .video-glow-wrapper-s:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 22px rgba(255, 215, 0, 0.9);
+  }
+
+ #video-frame {
+    border-radius: 12px;
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+  .glowing-section {
+  border: 2px solid #c4ffc9;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px #b3fcd5, 0 0 40px #8afcc2;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  animation: glow-bg 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow-bg {
+  from {
+    box-shadow: 0 0 20px #b3fcd5, 0 0 40px #8afcc2;
+  }
+  to {
+    box-shadow: 0 0 30px #94f5d2, 0 0 60px #54fcb1;
+  }
+}
+
+.email-link {
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.email-link:hover {
+  color: #28a745;
+}
+
+.thank-you-text {
+  font-family: 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
