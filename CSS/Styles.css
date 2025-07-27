@@ -29,25 +29,28 @@ body {
 
 /* Place your background images here */
 .bg1 {
-    background-image: url(/WEBSITE_CREATION/HTML/Bharathi/5_1_BTS.jpg);
+    background-image: url("../HTML/Bharathi/IMG_20230513_170654812_HDR~2_BTS.jpg");
 }
 .bg2 {
-    background-image: url(/WEBSITE_CREATION/HTML/Bharathi/5_BTS.jpg);
+    background-image: url("../HTML/Bharathi/5_BTS.jpg");
 }
 .bg3 {
-    background-image: url(/WEBSITE_CREATION/HTML/Bharathi/6_BTS.JPG);
+    background-image: url("../HTML/Bharathi/6_BTS.JPG");
 }
 .bg4 {
-    background-image: url(/WEBSITE_CREATION/HTML/Bharathi/8_BTS.JPG);
+    background-image: url("../HTML/Bharathi/8_BTS.JPG");
 }
 .bg5 {
-    background-image: url(/WEBSITE_CREATION/HTML/Bharathi/17_BTS.JPG);
+    background-image: url("../HTML/Bharathi/17_BTS.JPG");
 }
 .bg6 {
-    background-image: url(/WEBSITE_CREATION/HTML/Bharathi/4_1_BTS.JPG);
+    background-image: url("../HTML/Bharathi/4_1_BTS.JPG");
 }
 .bg7 {
-    background-image: url(/WEBSITE_CREATION/HTML/Bharathi/11_1_BTS.JPG);
+    background-image: url("../HTML/Bharathi/11_1_BTS.JPG");
+}
+.bg8 {
+    background-image: url("../HTML/Bharathi/5_1_BTS.jpg");
 }
 
 
