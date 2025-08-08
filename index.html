@@ -638,7 +638,7 @@
         <div class="col">
           <div class="video-glow-wrapper-s">
             <div class="ratio ratio-16x9">
-              <iframe id="video-frame-s" src="https://www.youtube.com/embed/6kNS-mfe64Y" title="Video 1"
+              <iframe id="video-frame-s" src="https://www.youtube.com/embed/tI32ATvB9GY" title="Video 1"
                 allowfullscreen></iframe>
             </div>
           </div>
@@ -648,7 +648,7 @@
         <div class="col">
           <div class="video-glow-wrapper-s">
             <div class="ratio ratio-16x9">
-              <iframe id="video-frame-s" src="https://www.youtube.com/embed/vi7YP9aRlpw" title="Video 2"
+              <iframe id="video-frame-s" src="https://www.youtube.com/embed/mnHNtT_bnjk" title="Video 2"
                 allowfullscreen></iframe>
             </div>
           </div>
@@ -658,7 +658,7 @@
         <div class="col">
           <div class="video-glow-wrapper-s">
             <div class="ratio ratio-16x9">
-              <iframe id="video-frame-s" src="https://www.youtube.com/embed/vLKlUyZqkiw" title="Video 3"
+              <iframe id="video-frame-s" src="https://www.youtube.com/embed/jdpIFWgYqsQ" title="Video 3"
                 allowfullscreen></iframe>
             </div>
           </div>
@@ -667,7 +667,7 @@
         <div class="col">
           <div class="video-glow-wrapper-s">
             <div class="ratio ratio-16x9">
-              <iframe id="video-frame-s" src="https://www.youtube.com/embed/M8WpX8Kx0eQ" title="Video 3"
+              <iframe id="video-frame-s" src="https://www.youtube.com/embed/6hT-iVqOEnQ" title="Video 3"
                 allowfullscreen></iframe>
             </div>
           </div>
@@ -675,7 +675,7 @@
         <div class="col">
           <div class="video-glow-wrapper-s">
             <div class="ratio ratio-16x9">
-              <iframe id="video-frame-s" src="https://www.youtube.com/embed/1GNrJf0tsEc" title="Video 3"
+              <iframe id="video-frame-s" src="https://www.youtube.com/embed/tw-R9POKglw" title="Video 3"
                 allowfullscreen></iframe>
             </div>
           </div>
@@ -684,7 +684,25 @@
         <div class="col">
           <div class="video-glow-wrapper-s">
             <div class="ratio ratio-16x9">
-              <iframe id="video-frame-s" src="https://www.youtube.com/embed/zPNUFd7qYrw" title="Video 3"
+              <iframe id="video-frame-s" src="https://www.youtube.com/embed/LtdqHbv064w" title="Video 3"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+           <div class="col">
+          <div class="video-glow-wrapper-s">
+            <div class="ratio ratio-16x9">
+              <iframe id="video-frame-s" src="https://www.youtube.com/embed/cTtNZAKOR_I" title="Video 3"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+           <div class="col">
+          <div class="video-glow-wrapper-s">
+            <div class="ratio ratio-16x9">
+              <iframe id="video-frame-s" src="https://www.youtube.com/embed/80uLgGUM-nQ" title="Video 3"
                 allowfullscreen></iframe>
             </div>
           </div>
@@ -711,37 +729,33 @@
     </section>
   </section>
   <section id="Contact" class="py-5 text-center bg-dark text-white">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class=" col-md-12">
-          <h1>Contact</h1>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-7">
-          <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Name</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Mobile</label>
-              <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">Description</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class=" col-md-12">
+        <h1>Contact</h1>
       </div>
     </div>
-  </section>
+    <div class="row justify-content-center">
+      <div class="col-md-7">
+        <form id="contactForm">
+          <div class="mb-3 text-start">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3 text-start">
+            <label class="form-label">Mobile</label>
+            <input type="number" class="form-control" id="mobile" required>
+          </div>
+         <div class="mb-3 text-start">
+            <label class="form-label">Description</label>
+            <textarea class="form-control" id="description" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
   <footer class="py-3">
     <div class="container">
       <div class="row">
@@ -769,6 +783,32 @@
     bannerBgs[0].classList.add('active');
     setInterval(cycleBannerBackground, 4000);
   }
+
+  
+  /* -------------------
+     Contact Form Submit → Google Sheets
+  ------------------- */
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    fetch("https://script.google.com/macros/s/AKfycbwx31Y2v6QOt19MLCcZGf4vUvqfNiRxgMGliflz1VswCgt_htfOhaftSHn-seJEr9mL4Q/exec", {
+      method: "POST",
+      body: JSON.stringify({
+        name: document.getElementById("name").value,
+        mobile: document.getElementById("mobile").value,
+        description: document.getElementById("description").value
+      })
+    })
+    .then(res => res.json())
+    .then(data => {
+      alert("✅ Thank you! Your message has been submitted.");
+      document.getElementById("contactForm").reset();
+    })
+    .catch(err => {
+      alert("❌ There was an error submitting the form. Please try again.");
+      console.error(err);
+    });
+  });
 </script> 
 
 </html>
